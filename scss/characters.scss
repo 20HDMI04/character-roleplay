@@ -1,0 +1,131 @@
+p {
+    font-size: calc(10px + 1vh);
+    margin: 0%;
+    padding: 0%;
+}
+h1 {
+    font-size: calc(18px + 1vh);
+}
+@media only screen and (max-width: 1175px) {
+    p {
+        font-size: 2vh;
+    }
+    h1 {
+        font-size: 4vh;
+    }
+}
+@font-face {
+    font-family: "BreatheFire";
+    src: url("../fonts/BreatheFireIii-PKLOB.ttf") format("truetype");
+}
+* {
+    font-family: "BreatheFire";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-size: 1.2vw;
+    overflow-x: hidden;
+    .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .top {
+        background-color: transparent;
+    }
+    .navbavkcolor {
+        background-color: #000e1c;
+    }
+}
+
+.windowVH {
+    background-image: url("../assets/main1_converted.jpg");
+    background-position-x: center;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.windoWV {
+    background-image: url("../assets/main1_converted.jpg");
+    background-position-x: center;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#strength,
+#vitality,
+#dexterity {
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    background-color: #ccc;
+}
+#strength span {
+    display: block;
+    height: 5px;
+    border-radius: 2px;
+    transition: all 500ms ease;
+}
+#vitality span {
+    display: block;
+    height: 5px;
+    border-radius: 2px;
+    transition: all 500ms ease;
+}
+#dexterity span {
+    display: block;
+    height: 5px;
+    border-radius: 2px;
+    transition: all 500ms ease;
+}
+.strength-0 span {
+    background-color: red;
+    width: 5%;
+}
+.strength-1 span {
+    background-color: orangered;
+    width: 25%;
+}
+.strength-2 span {
+    background-color: orange;
+    width: 50%;
+}
+.strength-3 span {
+    background-color: yellowgreen;
+    width: 75%;
+}
+.strength-4 span {
+    background-color: green;
+    width: 100%;
+}
+#inside {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.971);
+    text-align: center;
+    @media screen and (max-width: 769px){
+        margin-top: 25vh;
+        h1{
+            color: #000e1c;
+        }
+    }
+    @media screen and (min-width: 769px){
+        margin-top: 15vh;
+    }
+    backdrop-filter: blur(10px) grayscale(50%);
+    table {
+        width: 100%;
+        cursor: pointer;
+    }
+    #cut {
+        width: 100%;
+        height: 18rem;
+        object-fit: cover;
+        object-position: 60% top;
+    }
+}

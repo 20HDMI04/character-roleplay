@@ -1,0 +1,8 @@
+At the root directory:
+npm run dev
+
+After at the root directory(new terminal):
+cd backend
+node imain.cjs
+OR
+nodemon imain.cjs (prerequisite: nodemon globally or locally installed)

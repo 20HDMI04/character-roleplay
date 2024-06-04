@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="..\..\node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+    <script src="..\..\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/chs.css">
+    <title>Roleplay</title>
+  </head>
+  
+  
+  <body style="overflow: hidden" class="windoWV">
+    <header id="1">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark top" id="navbar">
+        <a class="navbar-brand mx-1" href="#1"><img src="../assets/logo.png" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./character-maker.html">Character Maker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./characters.html">Characters</a>
+            </li>
+           
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <div class="form-group">
+          <label for="name"><p>Name</p></label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="gender"><p>Gender</p></label>
+          <!-- "fighter","rogue","mage","healer","tank","scout","leader" -->
+          <select class="form-control" id="gender">
+            <option>male</option>
+            <option>female</option>
+            <option>other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age"><p>Age</p></label>
+          <input type="number" class="form-control" id="age" placeholder="Your Character Age">
+        </div>
+        <div class="form-group">
+          <label for="role"><p>Your Role</p></label>
+          <!-- "fighter","rogue","mage","healer","tank","scout","leader" -->
+          <select class="form-control" id="role">
+            <option>fighter</option>
+            <option>rogue</option>
+            <option>mage</option>
+            <option>healer</option>
+            <option>tank</option>
+            <option>scout</option>
+            <option>leader</option>
+          </select>
+        </div>
+        <div id="results">
+          <p>Strength</p>
+          <div id="strength"><span></span></div>
+          <p>Vitality</p>
+          <div id="vitality"><span></span></div>
+          <p>Dexterity</p>
+          <div id="dexterity"><span></span></div>
+        </div>
+        <div class="form-group">
+          <label for="slogan"><p>Your Slogan</p></label>
+          <textarea class="form-control" id="slogan" rows="3" placeholder="Your Slogan like:  'I'm always one step ahead.' "></textarea>
+        </div>
+        <button type="submit" class="hex" id="button">Time For Adventure</button>
+      </form>
+    </main>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/style.js"></script>
+  </body>
+</html>
